@@ -1,0 +1,158 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  &__input {
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    & > input {
+      padding-bottom: 10px;
+      padding-top: 0px !important;
+      font-size: 14px;
+    }
+    &-eye {
+      position: absolute;
+      display: inline-flex;
+      align-self: flex-end;
+      cursor: pointer;
+      margin-top: 15px;
+      margin-right: 15px;
+    }
+
+    &-strength {
+      position: absolute;
+      display: inline-flex;
+      flex-direction: column;
+      margin-top: 5px;
+      align-self: flex-end;
+      &-circle {
+        width: 5px;
+        height: 5px;
+        margin-bottom: 5px !important;
+        border-radius: 50%;
+        vertical-align: middle;
+        border: 1px solid #e0e0e0 !important;
+        &:checked {
+          background-color: $color-blue;
+        }
+      }
+    }
+  }
+
+  & input {
+    outline: none;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid $color-background;
+    color: $color-grey-dark;
+    background: transparent;
+    order: 2;
+
+    &:focus + span {
+      color: $color-blue;
+    }
+    &:focus {
+      border-bottom: 1px solid $color-blue;
+    }
+  }
+
+  & span {
+    margin-bottom: 5px;
+    display: inline-block;
+    letter-spacing: 1px;
+  }
+
+  &__submit input[type="submit"] {
+    padding: 10px 30px;
+    letter-spacing: 1px;
+    border-radius: 5%;
+    background: $color-blue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    float: right;
+
+    &:hover {
+      background: $color-blue-hover;
+    }
+  }
+
+  &__remember {
+    & > h5 {
+      display: inline-flex;
+    }
+
+    &-checkbox {
+      width: 15px;
+      height: 15px;
+      margin-bottom: 5px !important;
+      border-radius: 50%;
+      vertical-align: middle;
+      border: 1px solid $color-background !important;
+      appearance: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+      &:checked {
+        background-color: $color-blue;
+      }
+    }
+  }
+}
+
+@media (max-width: $vh-largest) {
+  .signup {
+    &__box {
+      height: 60%;
+      width: 70%;
+    }
+  }
+  .form__submit > input {
+    margin-top: 50px;
+  }
+  .login {
+    &__box {
+      display: inline-flex;
+      margin-bottom: 0;
+      &-primary {
+        width: 100%;
+      }
+      &-text {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: $vh-large) and (max-width:$vh-largest){
+  .login__box{
+    margin-bottom: 30%;
+  }
+  .form__submit > input{
+    margin-top: 10px;
+  }
+}
+
+.strength {
+  &-green {
+    &.active {
+      background-color: $color-strength-green;
+    }
+  }
+  &-brown {
+    &.active {
+      background-color: $color-strength-brown;
+    }
+  }
+  &-orange {
+    &.active {
+      background-color: $color-strength-orange;
+    }
+  }
+  &-red {
+    &.active {
+      background-color: $color-strength-red;
+    }
+  }
+}

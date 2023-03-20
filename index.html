@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv='Content-Type' content='text/html'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeYard Frontend</title>
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet"/>
+    <link
+      href="//fonts.googleapis.com/css?family=Open+Sans:600"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+  </head>
+  <body>
+    <section>
+      <div class="signup">
+        
+        <div class="signup__box">
+          <div class="signup__box-primary">
+            <h1>Welcome to Acme.</h1>
+          </div>
+          <div class="signup__box-text">
+            <h6>Create your account by filling the form below.</h6>
+          </div>
+          <form method="POST" class="form" id="form" >
+            <div class="form__input">
+              <input type="email" name="email" id="email" />
+              <span class="form__input-text">Email</span>
+            </div>
+            <div class="form__input">
+              <input onkeyup="trigger()" type="password" name="password" id="password" class="password" pattern="[a-zA-Z0-9]+" />
+              <span class="form__input-text">Password</span>
+              <img
+                src="assets/img/fa-eye.png"
+                id="togglePassword"
+                class="form__input-eye"
+              />
+              <div class="form__input-strength">
+                <div class="form__input-strength-circle strength-green"></div>
+                <div class="form__input-strength-circle strength-orange"></div>
+                <div class="form__input-strength-circle strength-brown"></div>
+                <div class="form__input-strength-circle strength-red"></div>
+              </div>
+            </div>
+            <div class="form__remember">
+              <input
+                type="checkbox"
+                class="form__remember-checkbox"
+                name="checkbox"
+                id="checkbox"
+              />
+              <h5>Remember me</h5>
+            </div>
+            <div class="form__submit">
+              <input type="submit" name="submit" value="Sign up" id="submit" />
+            </div>
+          </form>
+        </div>
+        <div class="signup__footer">
+          <div class="signup__text">
+            <p>&copy; 2015 Acme, Inc.</p>
+          </div>
+          <div class="signup__link">
+            <a href="#" class="signup__links">Terms</a>
+            <a href="#" class="signup__links">Privacy</a>
+            <a href="#" class="signup__links">...</a>
+          </div>
+        </div>
+      </div>
+      <div class="login">
+        <div class="login__bg">
+        </div>
+        <div class="login__box">
+          <img src="assets/img/acme.png" alt="Logo" class="login__logo" />
+          <div class="login__box-primary">
+            <h2>Do you already have an account?</h2>
+          </div>
+          <div class="login__box-text">
+            <h4>
+              That's awesome! You can login by clicking on the button below. To
+              skip this next time, you can ask us to remember your login
+              credentials.
+            </h4>
+          </div>
+          <div class="login__box-footer">
+            <button class="login__btn"><a href="#">Log in</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/variables.js" type="text/javascript" ></script>
+    <script src="assets/js/form-valid.js" type="text/javascript" ></script>
+    <script src="assets/js/show-password.js" type="text/javascript" ></script>
+    <script src="assets/js/togglebtn.js" type="text/javascript" ></script>
+  </body>
+</html>

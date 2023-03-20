@@ -1,0 +1,44 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: $color-background;
+  &__box {
+    padding: 30px;
+    width: 60%;
+    height: 400px;
+    border-radius: 2%;
+    background-color: $color-white;
+
+    &-primary {
+      margin-bottom: 10px;
+      display: inline-block;
+      letter-spacing: 1px;
+    }
+    &-text {
+      margin-bottom: 40px;
+      display: inline-block;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__footer {
+    display: inline-flex;
+    height: 17px;
+    width: 60%;
+    margin-top: 40px;
+    letter-spacing: 1px;
+  }
+
+  &__link {
+    margin-top: -2px;
+  }
+
+  &__links {
+    text-decoration: none;
+    margin-left: 10px;
+  }
+}

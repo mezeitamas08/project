@@ -1,0 +1,77 @@
+h1 {
+  font-size: $font-size-big;
+  font-family: $font-family-sans;
+  color: $color-grey-dark;
+  font-weight: 600;
+  line-height: $font-heights-30;
+}
+
+h2{
+  font-size: $font-size-big;
+  font-family: $font-family-sans;
+  color: $color-white;
+  font-weight: 500;
+  line-height: $font-heights-44;
+}
+
+h3{
+  font-size: $font-size-small;
+  font-family: $font-family-apple;
+  color: $color-grey-dark;
+  line-height: $font-heights-17;
+}
+
+h4{
+  font-size: $font-size-small;
+  font-family: $font-family-apple;
+  color: $color-white;
+  line-height: $font-heights-30;
+}
+
+h5{
+  font-size: $font-size-small;
+  font-family: $font-family-apple;
+  color: $color-grey-dark-2;
+  line-height: $font-heights-17;
+}
+
+h6{
+  font-size: $font-size-small;
+  font-family: $font-family-apple;
+  color: $color-grey-dark-2;
+  line-height: $font-heights-19;
+}
+
+.signup__text{
+  font-size: $font-size-smallest;
+  font-family: $font-family-apple;
+  color: $color-grey-dark-2;
+  line-height: $font-heights-15;
+}
+
+.signup__links{
+  font-size: $font-size-smallest;
+  font-family: $font-family-sans;
+  color: $color-grey-dark-2;
+  font-weight: 500;
+  line-height: $font-heights-17;
+}
+
+.form__input{
+  font-size: $font-size-small;
+  line-height: $font-heights-17;
+}
+
+.form__input-text{
+  font-size: $font-size-smallest;
+  font-family: $font-family-apple;
+  color: $color-grey-dark-2;
+  line-height: $font-heights-15;
+}
+
+input[type="submit"] {
+  font-size: $font-size-small;
+  font-family: $font-family-sans;
+  color: $color-white !important;
+  line-height: $font-heights-30;
+}
